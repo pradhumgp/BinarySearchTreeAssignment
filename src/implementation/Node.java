@@ -1,21 +1,21 @@
 package implementation;
 
 public class Node<E extends Comparable<E>> implements myinterface.Node<E> {
-    private int data;
+    private E data;
     private Node<E> left;
     private Node<E> right;
 
-    public Node(int data) {
+    public Node(E data) {
         this.data = data;
         this.left = null;
         this.right = null;
     }
 
-    public int getData() {
+    public E getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(E data) {
         this.data = data;
     }
 
