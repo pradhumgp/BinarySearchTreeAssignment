@@ -34,4 +34,5 @@ public class Node<E extends Comparable<E>> implements myinterface.Node<E> {
     public void setRight(Node<E> right) {
         this.right = right;
     }
+
 }
