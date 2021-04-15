@@ -17,6 +17,8 @@ public class MyMain {
         bstree.preOrder(bstree.root);
         System.out.println();
         bstree.postOrder(bstree.root);
+        System.out.println();
+        System.out.println(bstree.height(bstree.root));
 
     }
 }
