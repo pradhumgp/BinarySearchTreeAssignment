@@ -43,22 +43,27 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
     }
 
     @Override
-    public void inOrder(myinterface.Node<E> node) {
+    public void inOrder(Node<E> node) {
+        if(node!=null){
+            inOrder(node.getLeft());
+            System.out.print(node.getData() + " ");
+            inOrder(node.getRight());
+        }
 
     }
 
     @Override
-    public void preOrder(myinterface.Node<E> node) {
+    public void preOrder(Node<E> node) {
 
     }
 
     @Override
-    public void postOrder(myinterface.Node<E> node) {
+    public void postOrder(Node<E> node) {
 
     }
 
     @Override
-    public void reverseInOrder(myinterface.Node<E> node) {
+    public void reverseInOrder(Node<E> node) {
 
     }
 
@@ -68,7 +73,9 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
     }
 
     @Override
-    public int height(myinterface.Node<E> node) {
+    public int height(Node<E> node) {
         return 0;
     }
+
+
 }
