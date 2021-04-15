@@ -21,6 +21,5 @@ public class MyMain {
         System.out.println(bstree.height(bstree.root));
         System.out.println(bstree.search(115));
         System.out.println(bstree.search(200));
-
     }
 }
