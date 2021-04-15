@@ -165,7 +165,6 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
         }
     }
 
-
     private boolean isRightChild(Node<E> current) {
         return current.getLeft() == null && current.getRight() != null;
     }
