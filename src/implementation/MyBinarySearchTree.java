@@ -88,7 +88,10 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
 
     @Override
     public int height(Node<E> node) {
-        return 0;
+        if (node == null) {
+            return -1;
+        }
+        return 1 + Integer.max(height(node.getLeft()), height(node.getRight()));
     }
 
 
