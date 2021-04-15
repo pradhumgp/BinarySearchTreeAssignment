@@ -45,7 +45,7 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
                 if(temp.getData().compareTo(searchElement) ==0){
                     return true;
                 }
-                if(temp.getData().compareTo(searchElement) <0){
+                if(searchElement.compareTo(temp.getData()) <0){
                     temp = temp.getLeft();
                 }
                 else{
